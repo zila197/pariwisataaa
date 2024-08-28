@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pariwisata Kota Padang Panjang</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            line-height: 1.6;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #35a79c;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+        }
+        nav {
+            background-color: #2c8c83;
+            padding: 0.5rem;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+            text-align: center;
+        }
+        nav ul li {
+            display: inline;
+            margin-right: 10px;
+        }
+        nav ul li a {
+            color: #ffffff;
+            text-decoration: none;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+            overflow: hidden;
+            padding: 20px;
+        }
+        .hero {
+            background-image: url('pp.jfif');
+            background-size: cover;
+            background-position: center;
+            height: 400px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            color: #ffffff;
+            text-align: center;
+        }
+        .hero h2 {
+            font-size: 2.5em;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+        .featured-destinations {
+            text-align: justify;
+            display: flex;
+            justify-content: space-between;
+            flex-wrap: wrap;
+        }
+        .destination {
+            background: #fff;
+            border-radius: 5px;
+            padding: 15px;
+            margin-bottom: 20px;
+            width: calc(33.33% - 20px);
+            box-shadow: 0 0 10px rgba(0,0,0,0.1);
+        }
+        .destination img {
+            width: 100%;
+            height: 200px;
+            object-fit: cover;
+            border-radius: 5px;
+        }
+        footer {
+            background-color: #35a79c;
+            color: #ffffff;
+            text-align: center;
+            padding: 1rem;
+            margin-top: 20px;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Selamat Datang di Padang Panjang</h1>
+    </header>
+    
+    
+       
+    <nav>
+        <style>
+            nav {
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                padding: 0.5rem 1rem;
+            }
+            nav ul {
+                display: flex;
+                list-style-type: none;
+                margin: 0;
+                padding: 0;
+            }
+            nav ul li {
+                margin-right: 15px;
+            }
+            .user-profile {
+                display: flex;
+                align-items: center;
+            }
+            .user-profile img {
+                width: 40px;
+                height: 40px;
+                border-radius: 50%;
+                margin-left: 10px;
+            }
+        </style>
+        <ul>
+            <li><a href="beranda.html">Beranda</a></li>
+            <li><a href="destinasi.html">Destinasi</a></li>
+            <li><a href="tentang.html">kontak</a></li>
+            <li><a href="kontak.html">informasi</a></li>
+        </ul>
+        <div class="user-profile">
+            <span></span>
+            <img src="provil.png" alt="provil">
+            <div class="search-container">
+                <input type="text" placeholder="Cari..." id="searchInput">
+                <button type="button" class="btn" onclick="search()">Cari</button>
+            </div>
+            <style>
+                .search-container {
+                    display: flex;
+                    align-items: center;
+                    margin-right: 10px;
+                }
+                #searchInput {
+                    padding: 5px;
+                    border: 1px solid #ccc;
+                    border-radius: 4px;
+                    margin-right: 5px;
+                }
+                .search-container .btn {
+                    padding: 5px 10px;
+                    font-size: 14px;
+                }
+            </style>
+            <script>
+                function search() {
+                    var searchTerm = document.getElementById('searchInput').value;
+                    alert('Anda mencari: ' + searchTerm);
+                    // Implementasi pencarian sesuai kebutuhan
+                }
+            </script>
+        </div>
+        
+    </nav>
+    
+
+    <div class="hero">
+        <h2>Jelajahi Keindahan Padang Panjang</h2>
+    </div>
+
+    <div class="container">
+        <section id="home">
+            </section>
+
+        <section id="destinations">
+            <h2>Destinasi Wisata Populer</h2>
+            <div class="featured-destinations">
+                <div class="destination">
+                    <h3>Mifan Lake</h3>
+                    <img src="mifan.jfif" alt="Mifan Lake">
+                    <p>Mifan (Minang Fantasi) Water Park & Resort adalah taman bermain yang terdapat di Kota Padang Panjang, Sumatra Barat,
+                         Indonesia. Menempati lokasi di kawasan Perkampungan Minangkabau Village, Mifan berada dalam satu
+                          kompleks dengan Pusat Dokumentasi dan Informasi Kebudayaan Minangkabau (PDIKM). Minangkabau Village 
+                          sendiri merupakan sebuah lokasi yang menampilkan bangunan replika dari rumah adat Minangkabau.
+                           Mifan mulai dibangun pada pertengahan 2006 di atas lahan seluas 9,8 hektare dan mulai dibuka untuk umum pada Juli 2008.
+                            Peresmian Mifan dilakukan pada Oktober 2008 oleh Wali Kota Suir Syam. Pembukaan Mifan menandai 
+                        meningkatnya kunjungan wisatawan sekaligus menyumbang sektor pendapatan kota.
+                    </p>
+                </div>
+                <div class="destination">
+                    <h3>Lubuk Mata Kucing</h3>
+                    <img src="lubukmatakucing.jfif" alt="Lubuk Mata Kucing">
+                    <p>Air terjun alami yang menyegarkan dan cocok untuk berenang.Lubuk Mata Kucing adalah sebuah tempat pemandian
+                         umum yang populer dengan airnya yang sangat jernih seperti mata kucing, begituah pendapat dari orang-orang sekitar. 
+                        Pemandian yang dibangun sejak zaman penjajahan Belanda, sekitar tahun 1918 dan masih ada sampai sekarang.
+                         Bagi masyarakat Padang Panjang Lubuk Mata Kucing sudah tidak asing lagi tentunya. 
+                        Karena Lubuk Mata Kucing menjadi salah satu destinasi yang menarik yang sering dikunjungi para wisatawan.
+                         Berlokasi di Kelurahan Pasar Usang, Kecamatan Padang Panjang Barat,
+                         . .</p>
+                </div>
+                <div class="destination">
+                    <h3>Masjid Asasi</h3>
+                    <img src="masjid.jfif" alt="Masjid Asasi">
+                    <p>Masjid bersejarah dengan arsitektur yang menawan.Masjid Asasi (awalnya bernama Surau Gadang)[3] terletak di Kelurahan Sigando, 
+                        Kota Padang Panjang, Sumatera Barat. Masjid ini diperkirakan berdiri sejak abad ke-17 dan tercatat sebagai masjid tertua
+                         di Padangpanjang.
+                         Arsitekturnya mengikuti bentuk masjid tradisional Minangkabau.</p>
+                </div>
+                <div class="destination">
+                    <h3>taman pensil</h3>
+                    <img src="taman.jfif" alt="Masjid Asasi">
+                    <p>taman yang indah dan cocok untuk bersantai Padang Panjang, Padangkita.com - Pemeritah Kota Padang Panjang 
+                        membangun Taman Ramah Anak Lembuti yang di depan kantor Kapolres Padang Panjang.
+                         Taman bermain untuk anak-anak ini telah ramai dikunjungi oleh masyarakat sekitar.</p>
+                </div>
+                <div class="destination">
+                    <h3>PDIKM</h3>
+                    <img src="pdikm.jfif" alt="Masjid Asasi">
+                    <p>Kebudayaan Minangkabau atau biasa disingkat PDIKM adalah salah satu museum di Sumatra Barat
+                         yang terletak di Kelurahan Silaing Bawah, Kecamatan Padang Panjang Barat, Kota Padang Panjang.
+                          Museum ini bersisikan berbagai macam informasi dan koleksi mengenai kebudayaan Minangkabau baik berupa dokumentasi
+                           audio maupun visual. Museum ini dapat diakses dari jalur utama Padang–Bukittinggi,
+                         berjarak sekitar lebih kurang dua kilometer dari pusat Kota Padang Panjang.</p>
+                </div>
+                <div class="destination">
+                    <h3>lubuak soda</h3>
+                    <img src="LUBUAKSODA.jfif" alt="Masjid Asasi">
+                    <p>"Cerita singkat tentang Wisata Alam Pamandian Lubuak Soda.
+                         Assalamualaikum ww..!! Lubuak Soda adalah salah satu objek wisata yang terletak di Jorong Mudiak Aie
+                         ,Nagari Tambangan Kec X Koto Kab Tanah Datar SUMBAR. Awal terciptanya Lubuak Soda di...  Lebih banyak </p>
+                </div>
+                <div class="destination">
+                    <h3>mega mendung</h3>
+                    <img src="mega.jfif" alt="Masjid Asasi">
+                    <p>TWA Mega Mendung merupakan tempat wisata keluarga bernuasa alami. Terdapat sekitar empat pemandian destinasi wisata air
+                         di sepanjang jalan lintas Silaing ini.
+                        Tidak sedikit keluarga yang memilih TWA ini sebagai salah satu tempat wisata untuk liburan bersama anak-anak.
+                         Di samping keindahan dan kesejukan, 
+                         juga biaya untuk masuk tempat pemandian ini hanya dikenakan biaya parkir masuk mobil.</p>
+                </div>
+                <div class="destination">
+                    <h3>BCL</h3>
+                    <img src="bcl.jfif" alt="Masjid Asasi">
+                    <p>Bancah Laweh yang terkenal dengan lapangan pacu kuda di Padang Panjang, saat ini mendadak ramai bila di waktu 
+                        liburan atau akhir pekan. Wahana sederhana bermunculan,
+                         menjadi atraksi dan alasan orang-orang sekitar Padang Panjang datang ke sana.
+                           Minggu (1/11) pagi, seperti informasi yang disampaikan Kominfo Padang Panjang, 
+                           Lapangan Bancah Laweh terlihat ramai dan banyak masyarakat menghabiskan waktu liburan dan cuti
+                            terakhirnya berolahraga sambil belanja disana.</p>
+                </div>
+            </div>
+        </section>
+
+        <section id="about">
+           </section>
+
+        <section id="contact">
+           </section>
+    </div>
+
+    <footer>
+        <p>&copy; 2023 Pariwisata Kota Padang Panjang. All rights reserved.</p>
+    </footer>
+</body>
+</html>
